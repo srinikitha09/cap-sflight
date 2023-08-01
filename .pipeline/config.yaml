@@ -1,0 +1,18 @@
+
+#Project Setup
+general:
+  unsafeMode: true
+  collectTelemetryData: false
+  buildTool: 'mta'
+  verbose: true
+
+service:
+  buildToolVersion: "MBTJ11N16"
+
+stages:
+  Build:
+    mavenExecuteStaticCodeChecks: false # Defaults to false via Custom Defaults, otherwise set in Cloud CI Service
+    npmExecuteLint: false # Defaults to false via Custom Defaults, otherwise set in Cloud CI Service
+
+  'Additional Unit Tests':
+    npmExecuteScripts: true # Defaults to false via Custom Defaults, otherwise set in Cloud CI Service
