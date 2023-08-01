@@ -29,6 +29,12 @@ module.exports = function(config) {
      reporters: ["progress", "coverage"],
 
     browsers: ["ChromeHeadless"],
+    customLaunchers: {
+      ChromeHeadlessNoSandbox: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox']
+      }
+    },
     browserConsoleLogOptions: {
          level: "error"
     },
