@@ -17,6 +17,8 @@ stages:
   'Additional Unit Tests':
     npmExecuteScripts: true # Defaults to false via Custom Defaults, otherwise set in Cloud CI Service
 
+#Steps Specific Configuration
+steps:
   # Test stage step
   npmExecuteScripts:
     runScripts:
