@@ -1,7 +1,5 @@
-const puppeteer = require("puppeteer"),
-  cap = require("../../karma-cap-middleware");
 
-process.env.CHROME_BIN = puppeteer.executablePath();
+  cap = require("../../karma-cap-middleware");
 
 module.exports = async (config) => {
   // start the CAP server (either specify CLI arg --server=node or --server=java)
