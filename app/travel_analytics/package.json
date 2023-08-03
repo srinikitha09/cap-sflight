@@ -12,8 +12,8 @@
     "build": "ui5 build preload --clean-dest --include-task=generateCachebusterInfo",
     "start": "ui5 serve",
     "test": "npm run test:node && npm run test:java",
-    "test:java": "karma start  --single-run --no-sandbox --disable-setuid-sandbox",
-    "test:node": "karma start --single-run --no-sandbox --disable-setuid-sandbox"
+    "test:java": "karma start  --server=java --single-run --no-sandbox --disable-setuid-sandbox",
+    "test:node": "karma start --server=node --single-run --no-sandbox --disable-setuid-sandbox"
   },
   "keywords": [
     "ui5",
