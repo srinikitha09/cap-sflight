@@ -28,7 +28,12 @@ module.exports = async (config) => {
     customLaunchers: {
       ChromeHeadlessNoSandbox: {
         base: 'ChromeHeadless',
-        flags: ['--no-sandbox']
+        flags: ['--no-sandbox',
+                 '--disable-infobars',
+                 '--headless',
+                 '--disable-gpu',
+                 '--disable-dev-shm-usage',
+                 '--window-size=1440,735']
       }
     },
     browserNoActivityTimeout: 180000,
